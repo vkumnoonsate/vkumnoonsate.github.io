@@ -1,34 +1,375 @@
-nav {
-    height: 50px;
-    background-color: #707070;
+body {
+background-color: orange;
+
+/* TITLE BAR */ 
 }
-.inline-block {
-    display: inline-block;
-    padding: 15px;
+#windowBackground {
+    border-radius: 10px 10px 0px 0px;
+    background-color: #A9C3DE;
+    display: flex;
+    flex-direction: row;
+    padding: 0px
 }
-.block_element {
-    color: white;
-}
-.left {
-    height: 500px;
-    float: left;
-    width: 30%;
-    text-align: bottom;
+h1 {
+    font-family:'Gaegu', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-left: 0.5%;
 
 }
-.right {
-    height: 500px;
-    float: left;
-    width: 70%;
-    text-align: left;
+.bean {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1%
+
 }
-.card {
-    display: inline-block;
-    background-color: #c6c6c6;
-    border-radius: 5px;
-    height: 150px;
-    width: 150px;
-    margin: 35px;
-    margin-top: 50px;
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    margin-right: 1%;
+}
+/* TOP NAV */ 
+.home {
+    padding:0px;
+    margin: 5px;
+    width: 5%;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #DFE4F1;
+    font-family:'Gaegu', cursive;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.aboutMe {
+    padding:0px;
+    margin: 5px;
+    width: 6%;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #DFE4F1;
+    font-family:'Gaegu', cursive;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.projects {
+    padding:0px;
+    margin: 5px;
+    width: 6%;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #DFE4F1;
+    font-family:'Gaegu', cursive;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.contact {
+    padding:0px;
+    margin: 5px;
+    width: 6%;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #DFE4F1;
+    font-family:'Gaegu', cursive;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.flex {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+
+}
+
+  #row {
+    flex-direction: row;
+    background-color:#DFE4F1;
+    border-left: 10px solid #A9C3DE;
+    border-right: 10px solid #A9C3DE;
+    padding: 0px
   }
-  
+  /* SIDEBAR */
+ .columnIcons {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
+     grid-row-gap: 10px;
+     grid-column-gap: 20px;
+     width: 10%;
+     padding-left: 30px;
+     padding-top: 30px;
+ }
+ .rowIcons {
+    background-color: #EFEFF1; 
+    height: 782px;
+    border-left: 10px solid #A9C3DE;
+    border-right: 10px solid #A9C3DE;
+    border-bottom: 10px solid #A9C3DE;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 0% 100%;
+    grid-template-areas: 
+    "columnIcons hills"
+    "blankRec hills"
+    "color Palette";
+ }
+
+ .blankRec {
+     padding-left: 30px;
+     padding-top: 35px;
+ }
+ /* HERO IMAGE */
+ .hills {
+     margin-left: 200px;
+     padding:10px;
+     position: relative;
+     top: 0;
+     left:0;
+     text-align: center;
+ }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Gaegu', cursive;
+    font-size: 70px;
+}
+.featuredWork {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Gaegu', cursive;
+    font-size: 20px;
+
+}
+
+.featured {
+    position: absolute;
+    top: 280px;
+    left: 190px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px 
+}
+
+ .leftCloud {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    animation: movingLeft 10s linear infinite;
+
+ }
+ .topCloud {
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    animation: movingTop 10s linear infinite;
+ }
+ .sunCloud {
+    position: absolute;
+    top: 45px;
+    left: 900px;
+    animation: movingSun 10s linear infinite;
+ }
+ .offCloud {
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    animation: movingOff 5s linear infinite;
+ }
+ .sun {
+    position: absolute;
+    top: 40px;
+    left: 850px;
+    animation: sunnySpin 30s infinite;
+ }
+ .footer {
+    position: relative;
+    top: -52px;
+    left: 3px;
+    text-align: left;
+ }
+ /* FOOTER ITEMS */ 
+ .contactText {
+    position: absolute;
+    top: 0px;
+    left:0;
+    text-align: left;
+    font-family:'Gaegu', cursive;
+    font-size: 30px;
+    white-space: nowrap;
+    transform: translate(2%, 20%);
+ }
+
+ .colorPalette {
+    margin-left: 0px;
+    padding: 220px;
+ }
+
+ /*HOVERS*/ 
+ .eraser:hover {
+     background-image: url(..//images/color\ eraser.png);
+     transform: scale(1.2,1.2)
+ }
+.eyedrop:hover {
+    background-image: url(../images/color\ eyedrop.png);
+    transform: scale(1.2,1.2)
+}
+.pencil:hover {
+    background-image: url(../images/color\ pencil.png);
+    transform: scale(1.2,1.2)
+}
+.paintBucket:hover {
+    background-image: url(../images/color\ paint-bucket.png);
+    transform: scale(1.2,1.2)
+}
+.search:hover {
+    background-image: url(../images/color\ search.png);
+    transform: scale(1.2,1.2)
+}
+.paint:hover {
+    background-image: url(../images/color\ paint.png);
+    transform: scale(1.2,1.2)
+}
+.instagram:hover {
+    background-image: url(../images/color\ instagram.png);
+    transform: scale(1.2,1.2) 
+}
+.behance:hover {
+    background-image: url(../images/color\ behance.png);
+    transform: scale(1.2,1.2) ;
+}
+.linkedin:hover {
+    background-image: url(../images/color\ linkedin.png);
+    transform: scale(1.2,1.2)
+}
+.mail:hover {
+    background-image: url(../images/color\ mail.png);
+    transform: scale(1.2,1.2)
+}
+
+.inspired:hover {
+    transform: scale(1.1,1.1);
+}
+.oxfam:hover {
+    transform: scale(1.1,1.1);
+}
+.me:hover {
+    transform: scale(1.1,1.1);
+} 
+.home:hover { 
+    transform: scale(1.1,1.1);
+    border-style: dotted;
+    border-color: white;
+    border-width: 5px;
+}
+.aboutMe:hover {
+    transform: scale(1.1,1.1);
+    border-style: dotted;
+    border-color: white;
+    border-width: 5px;
+}
+.projects:hover {
+    transform: scale(1.1,1.1);
+    border-style: dotted;
+    border-color: white;
+    border-width: 5px;
+}
+.contact:hover {
+    transform: scale(1.1,1.1);
+    border-style: dotted;
+    border-color: white;
+    border-width: 5px;
+}
+.bean:hover {
+    animation: bounceArrow 0.7s infinite;
+}
+
+/*ANIMATIONS*/
+
+@keyframes bounceArrow {
+    from {
+        margin-top: 0px;
+    
+      }
+      50% {
+        margin-top: 7px;
+    
+      }
+      to {
+        margin-top: 0px;
+    
+      }
+}
+
+@keyframes movingLeft {
+    from {
+        transform: translateX(0px)     
+     }
+      50% {
+        transform: translateX(50px);
+      }
+      to {
+          transform: translateX(0px);
+      }
+      
+}
+@keyframes movingTop {
+    from {
+        transform: translateX(0px)     
+     }
+      50% {
+        transform: translateX(-60px);
+      }
+      to {
+          transform: translateX(0px);
+      }
+      
+}
+@keyframes movingSun {
+    from {
+        transform: translateX(0px)     
+     }
+      50% {
+        transform: translateX(25px);
+      }
+      to {
+          transform: translateX(0px);
+      }
+      
+}
+@keyframes movingOff {
+    from {
+        transform: translateX(0px)     
+     }
+      50% {
+        transform: translateX(-20px);
+      }
+      to {
+          transform: translateX(0px);
+      }
+      
+}
+@keyframes sunnySpin {
+    from {
+        transform: rotate(180deg);
+      }
+      to {
+        transform: rotate(-180deg);
+    
+      }
+    }
+
