@@ -1,14 +1,28 @@
 body {
-background-color: orange;
-
-/* TITLE BAR */ 
+background-color: #007F82;
 }
+
+/* BROWSER ICONS */
+
+.browser {
+    margin-left: 30px;
+    color: white;    
+}
+#browserIcons {
+    cursor: pointer;
+}
+/* TITLE BAR */ 
 #windowBackground {
     border-radius: 10px 10px 0px 0px;
     background-color: #A9C3DE;
     display: flex;
     flex-direction: row;
-    padding: 0px
+    padding: 0px;
+    width: 1050px;
+    height: 50px;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: -5%;
 }
 h1 {
     font-family:'Gaegu', cursive;
@@ -24,7 +38,8 @@ h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 1%
+    margin-left: 1%;
+    transform: scale(0.65)
 
 }
 .buttons {
@@ -32,7 +47,8 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     width: 80%;
-    margin-right: 1%;
+    margin-right: -6%;
+    transform: scale(0.75)
 }
 /* TOP NAV */ 
 .home {
@@ -97,7 +113,11 @@ h1 {
     background-color:#DFE4F1;
     border-left: 10px solid #A9C3DE;
     border-right: 10px solid #A9C3DE;
-    padding: 0px
+    padding: 0px;
+    width: 1030px;
+    height: 40px;
+    margin-left: 20%;
+    margin-right: auto;
   }
   /* SIDEBAR */
  .columnIcons {
@@ -112,7 +132,7 @@ h1 {
  }
  .rowIcons {
     background-color: #EFEFF1; 
-    height: 782px;
+    height: 700px;
     border-left: 10px solid #A9C3DE;
     border-right: 10px solid #A9C3DE;
     border-bottom: 10px solid #A9C3DE;
@@ -123,15 +143,19 @@ h1 {
     "columnIcons hills"
     "blankRec hills"
     "color Palette";
+    width: 1030px;
+    margin-left: 20%;
+    margin-right: auto;
+
  }
 
  .blankRec {
-     padding-left: 30px;
-     padding-top: 35px;
+     padding-left: 17px;
+     margin-top: -50px;
  }
  /* HERO IMAGE */
  .hills {
-     margin-left: 200px;
+     margin-left: 170px;
      padding:10px;
      position: relative;
      top: 0;
@@ -139,9 +163,13 @@ h1 {
      text-align: center;
      white-space: nowrap;
  }
+
+
  .responsive {
     width: 100%;
-    height: 587px;
+    height: auto;
+
+
 
  }
 .centered {
@@ -154,7 +182,7 @@ h1 {
 }
 .featuredWork {
     position: absolute;
-    top: 65%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:'Gaegu', cursive;
@@ -164,13 +192,14 @@ h1 {
 
 .featured {
     position: absolute;
-    top: 280px;
-    left: 190px;
+    top: 260px;
+    left: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     grid-template-areas: 
     "inspired oxfam me";
+    transform: scale(0.85)
 }
 
  .leftCloud {
@@ -186,12 +215,7 @@ h1 {
     left: 300px;
     animation: movingTop 10s linear infinite;
  }
- .sunCloud {
-    position: absolute;
-    top: 45px;
-    left: 900px;
-    animation: movingSun 10s linear infinite;
- }
+
  .offCloud {
     position: absolute;
     top: 150px;
@@ -200,25 +224,31 @@ h1 {
  }
  .sun {
     position: absolute;
-    top: 40px;
-    left: 850px;
+    top: 30px;
+    left: 660px;
     animation: sunnySpin 30s infinite;
  }
+
+  /* FOOTER ITEMS */ 
  .footer {
     position: relative;
     top: -52px;
-    left: 3px;
+    left: 0px;
     text-align: left;
-
+    transform: scale (0.5)
  }
- /* FOOTER ITEMS */ 
+
+ .footer img {
+    width: 1030px;
+    height: auto;
+ }
  .contactText {
     position: absolute;
-    top: 0px;
+    top: 5px;
     left:0;
     text-align: left;
     font-family:'Gaegu', cursive;
-    font-size: 30px;
+    font-size: 25px;
     white-space: nowrap;
     transform: translate(2%, 20%);
  }
@@ -226,50 +256,149 @@ h1 {
  .colorPalette {
     margin-left: 0px;
     padding: 220px;
+    padding-left: 200px;
+    transform: scale(0.65);
  }
 
- /*HOVERS*/ 
- .eraser:hover {
-     background-image: url(..//images/color\ eraser.png);
-     transform: scale(1.2,1.2)
- }
-.eyedrop:hover {
-    background-image: url(../images/color\ eyedrop.png);
-    transform: scale(1.2,1.2)
+ /* SIDE BAR HOVERS*/ 
+ .smile:hover{
+    background-image: url(../images/color\ smile.png);
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
+
+ .house:hover{
+    background-image: url(../images/color\ home.png);
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
+}
+
 .pencil:hover {
     background-image: url(../images/color\ pencil.png);
-    transform: scale(1.2,1.2)
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
 .paintBucket:hover {
-    background-image: url(../images/color\ paint-bucket.png);
-    transform: scale(1.2,1.2)
-}
-.search:hover {
-    background-image: url(../images/color\ search.png);
-    transform: scale(1.2,1.2)
+    background-image: url(../images/color\ paint-bucket.png) ;
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
 .paint:hover {
     background-image: url(../images/color\ paint.png);
-    transform: scale(1.2,1.2)
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
 .instagram:hover {
-    background-image: url(../images/color\ instagram.png);
-    transform: scale(1.2,1.2) 
+    background-image: url(../images/color\ instagram.png) ;
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
 .behance:hover {
     background-image: url(../images/color\ behance.png);
-    transform: scale(1.2,1.2) ;
+    transform: scale(1.1,1.1) ;
+    background-repeat: no-repeat;
 }
 .linkedin:hover {
-    background-image: url(../images/color\ linkedin.png);
-    transform: scale(1.2,1.2)
+    background-image:url(../images/color\ linkedin.png);
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
 .mail:hover {
     background-image: url(../images/color\ mail.png);
-    transform: scale(1.2,1.2)
+    transform: scale(1.1,1.1);
+    background-repeat: no-repeat;
 }
+/* TEXT OVERLAYS */
 
+.overlay {
+    position: absolute;
+    opacity:0;
+    width: 100%;
+    top: 47px;
+    color: black;
+    font-size: 15px;
+    padding: 0px;
+    text-align: center;
+    font-family:'Gaegu', cursive;
+    white-space: nowrap;
+  }
+
+  .house {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .house:hover .overlay {
+    opacity: 1;
+  }
+
+  .pencil {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .pencil:hover .overlay {
+    opacity: 1;
+  }
+
+  .paint {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .paint:hover .overlay {
+    opacity: 1;
+  }
+  .smile {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .smile:hover .overlay {
+    opacity: 1;
+  }
+  .instagram {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+
+  .instagram:hover .overlay {
+    opacity: 1;
+  }
+  .behance {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+  .behance:hover .overlay {
+    opacity: 1;
+  }
+  .linkedin {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+  .linkedin:hover .overlay {
+    opacity: 1;
+  }
+  
+  .mail {
+    position: relative;
+    width: 50px;
+    max-width: 50px;
+  }
+  .mail:hover .overlay {
+    opacity: 1;
+  }
+  
+
+
+ /* FEATURED HOVERS*/ 
 .inspired:hover {
     transform: scale(1.1,1.1);
 }
@@ -279,6 +408,9 @@ h1 {
 .me:hover {
     transform: scale(1.1,1.1);
 } 
+
+
+ /* TOP BAR HOVERS*/ 
 .home:hover { 
     transform: scale(1.1,1.1);
     border-style: dotted;
