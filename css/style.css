@@ -6,7 +6,8 @@ background-color: #007F82;
 
 .browser {
     margin-left: 30px;
-    color: white;    
+    color: white; 
+    font-family: 'Nanum Gothic Coding', monospace;   
 }
 #browserIcons {
     cursor: pointer;
@@ -25,8 +26,8 @@ background-color: #007F82;
     margin-top: -5%;
 }
 h1 {
-    font-family:'Gaegu', cursive;
-    font-size: 30px;
+  font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 25px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -53,51 +54,51 @@ h1 {
 /* TOP NAV */ 
 .home {
     padding:0px;
-    margin: 5px;
-    width: 5%;
+    margin: 6px;
+
     text-align: center;
     border-style: solid;
     border-width: 5px;
     border-color: #DFE4F1;
-    font-family:'Gaegu', cursive;
-    font-size: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 17px;
     font-weight: bold;
 
 }
 .aboutMe {
     padding:0px;
     margin: 5px;
-    width: 6%;
+
     text-align: center;
     border-style: solid;
     border-width: 5px;
     border-color: #DFE4F1;
-    font-family:'Gaegu', cursive;
-    font-size: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 17px;
     white-space: nowrap;
 }
 .projects {
     padding:0px;
     margin: 5px;
-    width: 6%;
+
     text-align: center;
     border-style: solid;
     border-width: 5px;
     border-color: #DFE4F1;
-    font-family:'Gaegu', cursive;
-    font-size: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 17px;
     white-space: nowrap;
 }
 .contact {
     padding:0px;
     margin: 5px;
-    width: 6%;
+
     text-align: center;
     border-style: solid;
     border-width: 5px;
     border-color: #DFE4F1;
-    font-family:'Gaegu', cursive;
-    font-size: 20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 17px;
     white-space: nowrap;
 }
 
@@ -105,6 +106,7 @@ h1 {
     padding: 0px;
     margin: 0px;
     display: flex;
+    align-items: center;
 
 }
 
@@ -118,6 +120,7 @@ h1 {
     height: 40px;
     margin-left: 20%;
     margin-right: auto;
+    
   }
   /* SIDEBAR */
  .columnIcons {
@@ -211,7 +214,7 @@ h1 {
  }
  .topCloud {
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 300px;
     animation: movingTop 10s linear infinite;
  }
@@ -219,14 +222,15 @@ h1 {
  .offCloud {
     position: absolute;
     top: 150px;
-    left: 600px;
+    left: 550px;
     animation: movingOff 5s linear infinite;
  }
  .sun {
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 660px;
     animation: sunnySpin 30s infinite;
+    transform: scale(0.3)
  }
 
   /* FOOTER ITEMS */ 
@@ -244,14 +248,20 @@ h1 {
  }
  .contactText {
     position: absolute;
-    top: 5px;
+    top: 13px;
     left:0;
     text-align: left;
-    font-family:'Gaegu', cursive;
-    font-size: 25px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 20px;
     white-space: nowrap;
     transform: translate(2%, 20%);
+    display: flex;
+    align-items: center;
  }
+
+ /*TASK BAR*/
+
+
 
  .colorPalette {
     margin-left: 0px;
@@ -308,18 +318,20 @@ h1 {
     transform: scale(1.1,1.1);
     background-repeat: no-repeat;
 }
+
+
 /* TEXT OVERLAYS */
 
 .overlay {
     position: absolute;
     opacity:0;
     width: 100%;
-    top: 47px;
+    top: 50px;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     padding: 0px;
     text-align: center;
-    font-family:'Gaegu', cursive;
+    font-family: 'Nanum Gothic Coding', monospace;
     white-space: nowrap;
   }
 
@@ -415,25 +427,25 @@ h1 {
     transform: scale(1.1,1.1);
     border-style: dotted;
     border-color: white;
-    border-width: 5px;
+    border-width: 4px;
 }
 .aboutMe:hover {
     transform: scale(1.1,1.1);
     border-style: dotted;
     border-color: white;
-    border-width: 5px;
+    border-width: 4px;
 }
 .projects:hover {
     transform: scale(1.1,1.1);
     border-style: dotted;
     border-color: white;
-    border-width: 5px;
+    border-width: 4px;
 }
 .contact:hover {
     transform: scale(1.1,1.1);
     border-style: dotted;
     border-color: white;
-    border-width: 5px;
+    border-width: 4px;
 }
 .bean:hover {
     animation: bounceArrow 0.7s infinite;
