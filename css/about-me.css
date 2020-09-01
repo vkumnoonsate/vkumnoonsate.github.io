@@ -4,6 +4,11 @@ background-color: #F4F7FF;
 
 
 /* TITLE BAR */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 
 .container {
   background-color: #EFEFF1;
@@ -59,7 +64,7 @@ h1 {
 }
 
 /* TOP NAV */
-.bean  {
+.bean {
   display: flex;
   justify-content: flex-start;
   align-items: center;
