@@ -3,7 +3,7 @@ background-color: #F4F7FF;
 }
 
 
-/* TITLE BAR */ 
+/* TITLE BAR */
 
 .container {
   background-color: #EFEFF1;
@@ -11,6 +11,7 @@ background-color: #F4F7FF;
   border-top-right-radius: 4px;
   margin: 0px 10%;
   height: auto;
+  box-shadow: 10px 10px 20px grey;
 
 
 }
@@ -33,7 +34,7 @@ h1 {
     font-size: 25px;
     text-align: center;
 
-   
+
 
 }
 
@@ -57,8 +58,8 @@ h1 {
 
 }
 
-/* TOP NAV */ 
-.bean {
+/* TOP NAV */
+.bean  {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -98,7 +99,7 @@ h1 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  
+
   /* Style the icon bar links */
   .icon-bar  {
     display: block;
@@ -114,44 +115,16 @@ h1 {
 
 .centered {
   position: absolute;
-  top: 300px;
-  left: 470px;
-
+  top: 350px;
+  left: 550px;
+  color: white;
     text-align: center;
     font-family:'Gaegu', cursive;
     font-size: 45px;
     white-space: nowrap;
     z-index: 1
 }
-.featuredWork {
-    position: relative;
-    top: 50px;
-    left: 400px;
-    transform: translate(-50%, -50%);
-    font-family:'Gaegu', cursive;
-    font-size: 35px;
-    padding-left: 20px;
-    padding-right:20px;
-    background-color: white;
 
-    z-index: 2;
-    white-space: nowrap;
-
-}
-
-.featured {
-    position: absolute;
-    top: 680px;
-    left: 280px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-row-gap: 30px;
-    grid-template-areas: 
-    "blackwhite" 
-    "oxfam" 
-    "highlanders" 
-    "me";
-}
 
 .blackwhite {
   position: relative;
@@ -161,20 +134,20 @@ h1 {
 
 }
 
-.oxfam {
+.cartoon {
   position: absolute;
-  top: 60px;
-  left:0px;
-  z-index:1;
+  top:500px;
+  left: 800px
 
 }
 
-.highlanders {
+.portrait {
   position: absolute;
-  top: 400px;
-  left: 500px;
-  z-index: 1;
+  left: 350px;
+  top: 80%;
+  filter: drop-shadow(5px 5px 10px #5B5B5B);
 
+  z-index:1;
 }
 
 .squares {
@@ -182,7 +155,7 @@ h1 {
   display: grid;
   grid-template-rows: 1fr;
   grid-row-gap: 30px;
-  grid-template-areas: 
+  grid-template-areas:
   "red"
   "orange"
   "yellow"
@@ -200,24 +173,25 @@ h1 {
 
 /* Bottom right text */
 h4 {
-  font-family:'Gaegu', cursive; 
+  font-family:'Gaegu', cursive;
   font-size: 30px;
+  line-height: 25px;;
   margin-bottom: 0px;
 }
 
 .text-block {
   position: absolute;
-  bottom: -350px;
-  right: 100px;
+  bottom: -650px;
+  right: 150px;
   background-color: white;
   color: black;
   padding-top: 0px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-bottom: 30px;
   font-family:'Nanum Gothic Coding', monospace;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 20px;
 }
 
 .text-block button{
@@ -234,103 +208,20 @@ h4 {
   cursor: pointer;
 
 }
-.textcontainer2 {
-  position: relative;
-}
-
-/* Bottom right text */
-h5 {
-  font-family:'Gaegu', cursive; 
-  font-size: 30px;
-  margin-bottom: 0px;
-}
-
-.text-block2 {
+.resume {
+  display:none;
   position: absolute;
-  bottom: -770px;
-  right: 450px;
-  background-color: white;
-  color: black;
-  padding-top: 0px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  font-family:'Nanum Gothic Coding', monospace;
-  font-size: 17px;
-  line-height: 17px;
-}
-
-.text-block2 button{
-  position: relative;
-  width: 127px;
-  height: 40px;
-  top: 0px;
-  background-color: linear-gradient(180deg, rgba(236, 236, 236, 0.6) 51.72%, rgba(91, 91, 91, 0) 148.28%);
-  border: 1.5px solid #86CDF4;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-family:'Nanum Gothic Coding', monospace;
-  letter-spacing: 2px;
-  cursor: pointer;
+  top:600px;
+  left: -200px;
+  z-index:1;
 
 }
-
-.textcontainer3 {
-  position: relative;
-}
-
-/* Bottom right text */
-h6 {
-  font-family:'Gaegu', cursive; 
-  font-size: 30px;
-  margin-bottom: 0px;
-}
-
-.text-block3 {
-  position: absolute;
-  bottom: -1190px;
-  right: 100px;
-  background-color: white;
-  color: black;
-  padding-top: 0px;
-  padding-left: 50px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  font-family:'Nanum Gothic Coding', monospace;
-  font-size: 17px;
-  line-height: 17px;
-}
-
-.text-block3 button{
-  position: relative;
-  width: 127px;
-  height: 40px;
-  top: 0px;
-  background-color: linear-gradient(180deg, rgba(236, 236, 236, 0.6) 51.72%, rgba(91, 91, 91, 0) 148.28%);
-  border: 1.5px solid #86CDF4;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-family:'Nanum Gothic Coding', monospace;
-  letter-spacing: 2px;
-  cursor: pointer;
-
-}
-
-.me {
-  position: absolute;
-  top: 800px;
-  left: -100px;
-  z-index: 1
-
-}
-
-
 
 .red {
   width: 500px;
   height: 1500px;
   position: absolute;
-  top: -680px;
+  top: -670px;
   left: 500px;
   background-color: #FF7171;
   z-index: -1;
@@ -351,7 +242,7 @@ h6 {
   width: 900px;
   height: 200px;
   position: absolute;
-  top: 1380px;
+  top: 880px;
   left: -100px;
   background-color: #FFF170;
 }
@@ -360,7 +251,7 @@ h6 {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 1200px;
+  top: 500px;
   left: 200px;
   background-color: #95D6A4;
 
@@ -370,13 +261,13 @@ h6 {
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 1350px;
+  top: 700px;
   left: 950px;
   background-color: #86CDF4;
 
 }
 
-.purple { 
+.purple {
   width: 100px;
   height: 230px;
   position: absolute;
@@ -417,7 +308,7 @@ h6 {
     animation: sunnySpin 30s infinite;
  }
 
-  /* FOOTER ITEMS */ 
+  /* FOOTER ITEMS */
 
 
  /*TASK BAR*/
@@ -426,10 +317,10 @@ h6 {
    position: absolute;
    top: 800px;
    left: 900px;
-  
+
  }
 
- /* SIDE BAR HOVERS*/ 
+ /* SIDE BAR HOVERS*/
  .smile:hover{
     background-image: url(../images/color\ smile.png);
     transform: scale(1.1,1.1);
@@ -557,7 +448,7 @@ h6 {
   .linkedin:hover .overlay {
     opacity: 1;
   }
-  
+
   .mail {
     position: relative;
     width: 50px;
@@ -566,10 +457,10 @@ h6 {
   .mail:hover .overlay {
     opacity: 1;
   }
-  
 
 
- /* FEATURED HOVERS*/ 
+
+ /* FEATURED HOVERS*/
 .inspired:hover {
     transform: scale(1.1,1.1);
 }
@@ -578,10 +469,10 @@ h6 {
 }
 .me:hover {
     transform: scale(1.1,1.1);
-} 
+}
 
 
- /* TOP BAR HOVERS*/ 
+ /* TOP BAR HOVERS*/
 
 .bean:hover {
     animation: bounceArrow 0.7s infinite;
@@ -592,21 +483,21 @@ h6 {
 @keyframes bounceArrow {
     from {
         margin-top: 0px;
-    
+
       }
       50% {
         margin-top: 7px;
-    
+
       }
       to {
         margin-top: 0px;
-    
+
       }
 }
 
 @keyframes movingLeft {
     from {
-        transform: translateX(0px)     
+        transform: translateX(0px)
      }
       50% {
         transform: translateX(50px);
@@ -614,11 +505,11 @@ h6 {
       to {
           transform: translateX(0px);
       }
-      
+
 }
 @keyframes movingTop {
     from {
-        transform: translateX(0px)     
+        transform: translateX(0px)
      }
       50% {
         transform: translateX(-60px);
@@ -626,11 +517,11 @@ h6 {
       to {
           transform: translateX(0px);
       }
-      
+
 }
 @keyframes movingSun {
     from {
-        transform: translateX(0px)     
+        transform: translateX(0px)
      }
       50% {
         transform: translateX(25px);
@@ -638,11 +529,11 @@ h6 {
       to {
           transform: translateX(0px);
       }
-      
+
 }
 @keyframes movingOff {
     from {
-        transform: translateX(0px)     
+        transform: translateX(0px)
      }
       50% {
         transform: translateX(-20px);
@@ -650,7 +541,7 @@ h6 {
       to {
           transform: translateX(0px);
       }
-      
+
 }
 @keyframes sunnySpin {
     from {
@@ -658,7 +549,7 @@ h6 {
       }
       to {
         transform: rotate(-180deg);
-    
+
       }
     }
 
@@ -679,7 +570,7 @@ h6 {
      }
      .featured {
         grid-template-columns: 1fr ;
-        grid-template-areas: 
+        grid-template-areas:
         "inspired"
         "oxfam"
         "me";
@@ -690,4 +581,3 @@ h6 {
      }
 
     }
-
