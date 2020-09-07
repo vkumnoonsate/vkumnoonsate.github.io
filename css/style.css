@@ -1,5 +1,5 @@
 body {
-background-color:white;
+background-color:rgb(253, 220, 208);
 background-image: 
 url(../images/blob.png), 
 url(../images/blob2.png), 
@@ -10,21 +10,15 @@ url(../images/blob6.png);
 background-repeat: no-repeat;
 background-position:  
 top -100px right -50px,
-bottom 200px left 10px,
+bottom -450px left 10px,
 bottom 90px right 10px,
 top 100px left -100px,
-bottom -350px left -20px,
-bottom -100px left 850px;
+bottom -800px left -20px,
+bottom -1000px left 850px;
 }
 
 
-.box {
-  position: relative;
-  width: 1000px;
-  height:100px;
-  background-color: #007F82;
-  z-index: -1
-}
+
 
 /* TITLE BAR */
 a {
@@ -44,6 +38,7 @@ a {
   margin: 0px 10% ;
   height: auto;
   box-shadow: 5px 5px 20px rgb(122, 122, 122);
+  margin-top: 20px;
 
 
 }
@@ -300,7 +295,7 @@ h1 {
   grid-template-columns: 400px 400px 400px;
   justify-content: space-evenly;
   z-index:1;
-  margin: 70px auto;
+  margin: 50px auto;
   margin-left: 4%;
 
 
@@ -322,17 +317,17 @@ h1 {
 /* Bottom right text */
 h4 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 0px;
   line-height: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
 
 }
 
 .text-block {
   position: absolute;
-  color: black;
-  padding-left: 10px;
+  color:black;
+  padding-left: -10px;
   padding-right: 15px;
   padding-bottom: 30px;
   font-family: 'Open Sans', sans-serif;
@@ -343,8 +338,8 @@ h4 {
 }
 .text-block img{
   position: absolute;
-  top: 36px;
-  left: 138px;
+  top: 48px;
+  left: 155px;
 }
 .text-block button{
   position: relative;
@@ -370,33 +365,66 @@ h5 {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   margin-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 15px;
   font-weight: 400
 }
 
 
 .oxfam {
   position: relative;
+  top: 10%;
+  left: 50%
 }
+
 .highlanders {
   position: relative;
+  top: 100%;
+  left: 60%
 }
 .me {
   position: relative;
+  top: 230%;
+  right: 150%
 }
 .pantoon {
   position: absolute;
-  top: -3%;
-  left: -3%;
-  background-color:white;
-  width: 372px;
+  top: 12%;
+  left: 5%;
+  background-color: white;
+  width: 370px;
   height:670px;
   z-index: -1;
-  box-shadow: 5px 5px 20px rgb(165, 165, 165);
+
 }
 
+.oxfam .pantoon{
+  position: absolute;
+  top: 3.5%;
+  left: 7.5%
+}
+.oxfam .text-block{
+  position: absolute;
+  left: 12%;
+  top: 85%
 
+}
+.highlanders .pantoon{
+  position: absolute;
+  left: 15%;
+  top: 12%
+}
 
+.highlanders .text-block {
+  position: absolute;
+  left: 20%;
+  top:92%
+
+}
+.me .text-block{
+  position: absolute;
+  top: 92%;
+  left: 10%
+}
  .leftCloud {
     position: absolute;
     top: 400px;
