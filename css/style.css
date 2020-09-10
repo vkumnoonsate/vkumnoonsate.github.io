@@ -1,5 +1,5 @@
 body {
-background-color:rgb(253, 220, 208);
+background-color:rgb(255, 239, 233);
 background-image: 
 url(../images/blob.png), 
 url(../images/blob2.png), 
@@ -319,8 +319,9 @@ h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   margin-bottom: 0px;
-  line-height: 20px;
-  margin-top: 50px;
+  line-height: 25px;
+  margin-top: 55px;
+  
 
 }
 
@@ -369,7 +370,9 @@ h5 {
   font-weight: 400
 }
 
-
+.text-block p{
+  margin-top: 10%
+}
 .oxfam {
   position: relative;
   top: 10%;
@@ -392,20 +395,20 @@ h5 {
   left: 5%;
   background-color: white;
   width: 370px;
-  height:670px;
+  height:450px;
   z-index: -1;
 
 }
 
 .oxfam .pantoon{
   position: absolute;
-  top: 3.5%;
+  top: 4%;
   left: 7.5%
 }
 .oxfam .text-block{
   position: absolute;
   left: 12%;
-  top: 85%
+  top: 84%
 
 }
 .highlanders .pantoon{
