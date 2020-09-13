@@ -48,7 +48,7 @@ body {
     width: 850px;
     height: 500px;
     margin: 20px auto;
-    background-color: rgb(82, 68, 158);
+    background-color: #233A77;
     border: 5px solid #E5E5E5;
   }
   .outer img{
@@ -153,7 +153,7 @@ body {
     top: 45%;
     left: 52%;
     transform: translate(-50%, -50%);
-    color: yellow;
+    color:white;
   }
   
   .centered p {
@@ -172,7 +172,7 @@ body {
   
   
   .centered p {
-    width: 4.8em;
+    width: 6.0em;
     opacity: 0;
     -webkit-animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
     animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
@@ -444,7 +444,7 @@ body {
   
   }
 
-   .star1 {
+   .bubble1 {
       position: absolute;
       top: 400px;
       left: 200px;
@@ -452,37 +452,32 @@ body {
       animation: scale 10s infinite;
   
    }
-   .star2 {
+   .bubble2 {
       position: absolute;
       top: 120px;
       left: 350px;
       animation: scale 10s infinite;
    }
   
-   .star3 {
+   .bubble3 {
       position: absolute;
       top: 150px;
       left: 700px;
       animation: scale 5s infinite;
    }
-   .star4 {
+   .fish1 {
     position: absolute;
     top: 350px;
     left: 800px;
     animation: scale 5s infinite;
  }
-   .moon {
+   .fish2 {
       position: absolute;
       top: 120px;
       left: 150px;
       animation: bounceArrow 2s infinite;;
    }
-   .planet {
-    position: absolute;
-    top: 200px;
-    left: 750px;
-    animation:  30s infinite;
- }
+  
   
     /* FOOTER ITEMS */
 
