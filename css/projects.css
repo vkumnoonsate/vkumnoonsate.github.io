@@ -165,12 +165,112 @@ body {
     font-family:'Gaegu', cursive;
     font-size: 45px;
     white-space: nowrap;
+
+  }
+  .flip-card {
+    width: 370px;
+    height:450px;;
+    perspective: 1000px;
+  }
   
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+
+  }
   
+  .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+
+
+  }
+
   
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 370px;
+    height:450px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+
+
+  .text-block  {
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+    text-align: left;
+
+
+  }
+  .text-block img {
+    margin: 15px;
+    margin-left: 3px
+
+  
+  }
+  .text-block h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin: 0px
+  }
+
+  .text-block h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin: 0px;
+    font-weight: 400;
+
+  }
+  .flip-card-front{
+    background-color: white;
+
+  }
+  .flip-card-front img{
+    margin-left:10px;
+    margin-top: 10px;
+  
+
+  }
+  .flip-card-back {
+    background-color: white;
+    color:black;
+    transform: rotateY(180deg);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+
+
+
+  }
+  .portrait {
+    position: relative;
+    top: 0%;
+    left: 50%
   }
   
   
+  .portrait .pantoon{
+    position: absolute;
+    top: -2.5%;
+    left: -2.5%
+  }
+  .portrait .text-block{
+    position: absolute;
+    left: 2%;
+    top: 80%
+  
+  }
   .centered p {
     width: 6.0em;
     opacity: 0;
@@ -288,7 +388,7 @@ body {
     justify-content: space-evenly;
     z-index:1;
     margin: 50px auto;
-    margin-left: 4%;
+
   
   
   }
@@ -319,11 +419,7 @@ body {
   
   }
   
-  .text-block img{
-    position: absolute;
-    top: 33px;
-    left: 150px;
-  }
+
   .show{
     position: relative;
     width: 127px;
@@ -364,45 +460,8 @@ body {
   border: 0;
 }
 
-.mask{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(52, 73, 94, 0.8);
-  z-index: 50;
-  visibility: hidden;
-  
-  opacity: 0;
-  
-  transition: 0.7s;
-}
-.modal{
-  position: fixed;
-  top: 3%;
-  left: 50%;
-  background: #bdc3c7;
-  z-index: 100;
-  visibility: hidden;
-  background-image: url(../images/RESUME.png);
-  
-  opacity: 0;
-  
-  transition: 0.5s ease-out;
-  
-  transform: translateY(45px);
-}
 
-.active{
-  visibility: visible;
-  opacity: 1;
-}
-.active + .modal{
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
+
   /* Bottom right text */
   h5 {
     font-family: 'Open Sans', sans-serif;
@@ -415,34 +474,7 @@ body {
   .bio p{
     margin-top: 10%
   }
-  .portrait {
-    position: relative;
-    top: 10%;
-    left: 50%
-  }
-  
-  .pantoon {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    background-color: white;
-    width: 370px;
-    height:450px;
-    z-index: -1;
-  
-  }
-  
-  .portrait .pantoon{
-    position: absolute;
-    top: -2.5%;
-    left: -2.5%
-  }
-  .portrait .text-block{
-    position: absolute;
-    left: 2%;
-    top: 97%
-  
-  }
+
 
    .bubble1 {
       position: absolute;
