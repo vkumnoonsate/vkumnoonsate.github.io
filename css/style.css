@@ -13,8 +13,8 @@ top -100px right -50px,
 bottom -450px left 10px,
 bottom 90px right 10px,
 top 100px left -100px,
-bottom -800px left -20px,
-bottom -1000px left 850px;
+bottom 800px left -20px,
+bottom 600px left 850px;
 }
 
 
@@ -342,7 +342,7 @@ h4 {
   top: 48px;
   left: 155px;
 }
-.text-block button{
+button{
   position: relative;
   width: 127px;
   height: 40px;
@@ -376,18 +376,18 @@ h5 {
 .oxfam {
   position: relative;
   top: 10%;
-  left: 50%
+  left: 30%
 }
 
 .highlanders {
   position: relative;
-  top: 100%;
-  left: 60%
+  top: 30%;
+  left: 130%
 }
 .me {
   position: relative;
-  top: 230%;
-  right: 150%
+  top: 50%;
+  left: 30%
 }
 .pantoon {
   position: absolute;
@@ -399,6 +399,56 @@ h5 {
   z-index: -1;
 
 }
+  
+.description {
+  position: absolute;
+  color:black;
+  padding-left: 500px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin-top: -25px;
+  top: 10%;
+  left: -10%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+
+}
+  
+.description2 {
+  position: absolute;
+  color:black;
+  padding-left: 100px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin-top: -25px;
+  top: 15%;
+  left: -120%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.description3 {
+  position: absolute;
+  color:black;
+  padding-left: 500px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+  margin-top: -25px;
+  top: 15%;
+  left: -10%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+
+}
 
 .oxfam .pantoon{
   position: absolute;
@@ -408,7 +458,7 @@ h5 {
 .oxfam .text-block{
   position: absolute;
   left: 12%;
-  top: 84%
+  top: 95%
 
 }
 .highlanders .pantoon{
@@ -420,7 +470,7 @@ h5 {
 .highlanders .text-block {
   position: absolute;
   left: 20%;
-  top:92%
+  top:95%
 
 }
 .me .text-block{
@@ -428,6 +478,11 @@ h5 {
   top: 92%;
   left: 10%
 }
+
+button:hover{
+    background-color: rgb(189, 189, 189);
+    border: 1.5px solid rgb(108, 195, 241);
+  }
  .leftCloud {
     position: absolute;
     top: 400px;

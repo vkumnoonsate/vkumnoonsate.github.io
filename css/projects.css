@@ -481,27 +481,27 @@ body {
       top: 400px;
       left: 200px;
     
-      animation: scale 10s infinite;
+      animation: bounceArrow 4s infinite;
   
    }
    .bubble2 {
       position: absolute;
       top: 120px;
       left: 350px;
-      animation: scale 10s infinite;
+      animation: bounceArrow 6s infinite;
    }
   
    .bubble3 {
       position: absolute;
       top: 150px;
       left: 700px;
-      animation: scale 5s infinite;
+      animation: bounceArrow 7s infinite;
    }
    .fish1 {
     position: absolute;
     top: 350px;
     left: 800px;
-    animation: scale 5s infinite;
+    animation: bounceArrow 5s infinite;
  }
    .fish2 {
       position: absolute;
