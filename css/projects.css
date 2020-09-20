@@ -255,10 +255,15 @@ body {
   }
   .portrait {
     position: relative;
-    top: 0%;
-    left: 50%
+    top: -110.9%;
+    left: 150%
   }
   
+  .oxfam {
+    position: relative;
+    top: 0%;
+    left: 50%;
+  }
   
   .portrait .pantoon{
     position: absolute;
@@ -267,9 +272,15 @@ body {
   }
   .portrait .text-block{
     position: absolute;
-    left: 2%;
+    left: 4%;
     top: 80%
   
+  }
+  .oxfam .text-block {
+    position: absolute;
+    left: 4%;
+    top: 80%
+
   }
   .centered p {
     width: 6.0em;
@@ -372,7 +383,20 @@ body {
     }
   }
   
+  button {
+    position: relative;
+    width: 127px;
+    height: 40px;
+    top: 0px;
+    background-color: linear-gradient(180deg, rgba(236, 236, 236, 0.6) 51.72%, rgba(91, 91, 91, 0) 148.28%);
+    border: 1.5px solid #86CDF4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family:'Nanum Gothic Coding', monospace;
+    letter-spacing: 2px;
+    cursor: pointer;
   
+  }
   .blackwhite {
     position: relative;
     z-index:1;
@@ -488,7 +512,7 @@ body {
       position: absolute;
       top: 120px;
       left: 350px;
-      animation: bounceArrow 6s infinite;
+      animation: bounceArrow s infinite;
    }
   
    .bubble3 {

@@ -1,0 +1,70 @@
+body {
+  background-color:rgb(255, 239, 233);
+  background-image: 
+  url(../images/blob.png), 
+  url(../images/blob2.png), 
+  url(../images/blob3.png),
+  url(../images/blob4.png),
+  url(../images/blob5.png),
+  url(../images/blob6.png);
+  background-repeat: no-repeat;
+  background-position:  
+  top -100px right -50px,
+  bottom -450px left 10px,
+  bottom 90px right 10px,
+  top 100px left -100px,
+  bottom 800px left -20px,
+  bottom 600px left 850px;
+  }
+  
+  
+  
+  
+  /* TITLE BAR */
+.breadcrumb{
+  color:black;
+  font-family: 'Nanum Gothic Coding', monospace;
+ 
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+  
+  #navigation {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-size: 20px;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  img {
+    margin: 0px 5%;
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #17a2b8; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #myBtn:hover {
+    background-color:#117a8a; /* Add a dark-grey background on hover */
+  } 
